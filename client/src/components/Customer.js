@@ -3,6 +3,7 @@ import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
 import CustomerDelete from './CustomerDelete'
 
+
 class Customer extends React.Component {
     render() {
         return (

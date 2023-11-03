@@ -19,40 +19,49 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 
+
 const styles = theme => ({
   root: {
     width: "100%",
     minWidth: 1080
   },
+
   menu: {
     marginTop: 15,
     marginBottom: 15,
     display: 'flex',
     justifyContent: 'center'
   },
+
   paper: {
     marginLeft: 18,
     marginRight: 18
   },
+
   progress: {
     margin: theme.spacing.unit * 2
   },
+
   grow: {
     flexGrow: 1,
   },
+
   tableHead: {
     fontSize: '1.0rem'
   },
+
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
   },
+
   title: {
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
     },
   },
+
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
@@ -67,6 +76,7 @@ const styles = theme => ({
       width: 'auto',
     },
   },
+
   searchIcon: {
     width: theme.spacing.unit * 9,
     height: '100%',
@@ -76,10 +86,12 @@ const styles = theme => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   inputRoot: {
     color: 'inherit',
     width: '100%',
   },
+
   inputInput: {
     paddingTop: theme.spacing.unit,
     paddingRight: theme.spacing.unit,
@@ -97,7 +109,7 @@ const styles = theme => ({
 });
 
 class App extends Component {
-
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -143,7 +155,7 @@ class App extends Component {
   };
 
   handleValueChange(e) {
-    let nextState = {};
+    const nextState = {};
     nextState[e.target.name] = e.target.value;
     this.setState(nextState);
   }
@@ -157,8 +169,10 @@ class App extends Component {
         return <Customer stateRefresh={this.stateRefresh} key={c.id} id={c.id} image={c.image} name={c.name} birthday={c.birthday} gender={c.gender} job={c.job} />
       });
     }
+
     const { classes } = this.props;
     const cellList = ["번호", "프로필 이미지", "이름", "생년월일", "성별", "직업", "설정"]
+
     return (
       <div className={classes.root}>
         <AppBar position="static">

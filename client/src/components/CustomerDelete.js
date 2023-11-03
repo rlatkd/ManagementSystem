@@ -6,24 +6,25 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogActions from '@material-ui/core/DialogActions';
 import Typography from '@material-ui/core/Typography';
 
-class CustomerDelete extends React.Component {
 
+class CustomerDelete extends React.Component {
+    
     constructor(props) {
         super(props);
         this.state = {
           open: false
         }
-        this.handleClickOpen = this.handleClickOpen.bind(this)
-        this.handleClose = this.handleClose.bind(this);
+        this.handlerClickOpen = this.handlerClickOpen.bind(this)
+        this.handlerClose = this.handlerClose.bind(this);
     }
 
-    handleClickOpen() {
+    handlerClickOpen() {
         this.setState({
           open: true
         });
     }
     
-    handleClose() {
+    handlerClose() {
         this.setState({
           open: false
         })
@@ -40,11 +41,11 @@ class CustomerDelete extends React.Component {
     render() {
         return (
             <div>
-                <Button variant="contained" color="secondary" onClick={this.handleClickOpen}>
+                <Button variant="contained" color="secondary" onClick={this.handlerClickOpen}>
                     삭제
                 </Button>
-                <Dialog onClose={this.handleClose} open={this.state.open}>
-                    <DialogTitle onClose={this.handleClose}>
+                <Dialog onClose={this.handlerClose} open={this.state.open}>
+                    <DialogTitle onClose={this.handlerClose}>
                         삭제 경고
                     </DialogTitle>
                     <DialogContent>
@@ -54,7 +55,7 @@ class CustomerDelete extends React.Component {
                     </DialogContent>
                     <DialogActions>
                         <Button variant="contained" color="primary" onClick={(e) => {this.deleteCustomer(this.props.id)}}>삭제</Button>
-                        <Button variant="outlined" color="primary" onClick={this.handleClose}>닫기</Button>
+                        <Button variant="outlined" color="primary" onClick={this.handlerClose}>닫기</Button>
                     </DialogActions>
                 </Dialog>
             </div>
