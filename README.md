@@ -19,6 +19,7 @@ Set-ExecutionPolicy RemoteSigned
 	"react-dom": "^17.0.2",
 }
 
+// shell
 npm i
 
 // index.js
