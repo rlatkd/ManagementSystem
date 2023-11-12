@@ -9,24 +9,30 @@ get-help Set-ExecutionPolicy
 Set-ExecutionPolicy RemoteSigned
 ```
 
-## change React version to v17.0.2
+## change React version to v16.7.0
 
 ```
 // package.json
 {
-	"@testing-library/react": "^12.1.4",
-	"react": "^17.0.2",
-	"react-dom": "^17.0.2",
+    ...
+    "dependencies": {
+        "@material-ui/core": "^3.8.1",
+        "@material-ui/icons": "^3.0.1",
+        "axios": "^0.18.0",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
+        "react-scripts": "2.1.2"
+    },
+    ...
 }
 
 // shell
-npm i
+npm install --save react@^16.7.0 react-dom@16.7.0
 
 // index.js
-import { render } from "react-dom";
 ...
-const container = document.getElementById("root");
-render(<App />, container);
+ReactDOM.render(<App />,document.getElementById('root'));
+...
 ```
 
 ## Yarn
