@@ -3,13 +3,14 @@
 ## 0. 목차
 
 - [시연](#1-시연)
--
+- [스택](#2-Stack)
+- [설정](#3-Settings)
 
 ## 1. 시연
 
 <img src="https://github.com/rlatkd/ManagementSystem/blob/main/assets/preview.gif?raw=true">
 
-## stack
+## 2. Stack
 
 ### Frontend
 
@@ -23,7 +24,7 @@
 
 - MySQL ^5.7
 
-## settings
+## 3. Settings
 
 ### Windows PowerShell settings
 
