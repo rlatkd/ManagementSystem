@@ -49,7 +49,7 @@ yarn add --dev webpack-cli
 
 > React and Node.js based Customers Management System
 
-<img src="https://github.com/kim6394/React_ManagementSystem/blob/master/assets/preview.gif?raw=true">
+<img src="https://github.com/rlatkd/ManagementSystem/blob/main/assets/preview.gif?raw=true">
 
 <br>
 
