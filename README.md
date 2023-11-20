@@ -1,6 +1,6 @@
-## 완성 예시
+## 시연
 
-<img src='https://github.com/rlatkd/ManagementSystem/blob/main/image/management.PNG'>
+<img src="https://github.com/rlatkd/ManagementSystem/blob/main/assets/preview.gif?raw=true">
 
 ## Windows PowerShell settings
 
@@ -48,8 +48,6 @@ yarn add --dev webpack-cli
 # **React_ManagementSystem**
 
 > React and Node.js based Customers Management System
-
-<img src="https://github.com/rlatkd/ManagementSystem/blob/main/assets/preview.gif?raw=true">
 
 <br>
 
