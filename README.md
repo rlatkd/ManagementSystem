@@ -2,14 +2,30 @@
 
 <img src="https://github.com/rlatkd/ManagementSystem/blob/main/assets/preview.gif?raw=true">
 
-## Windows PowerShell settings
+## stack
+
+### Frontend
+
+- React ^16.7.0
+
+### Backend
+
+- Express ^4.16.4
+
+### Database
+
+- MySQL ^5.7
+
+## settings
+
+### Windows PowerShell settings
 
 ```
 get-help Set-ExecutionPolicy
 Set-ExecutionPolicy RemoteSigned
 ```
 
-## change React version to v16.7.0
+### change React version to v16.7.0
 
 ```
 // package.json
@@ -35,7 +51,7 @@ ReactDOM.render(<App />,document.getElementById('root'));
 ...
 ```
 
-## Yarn
+### Yarn
 
 ```
 yarn init
@@ -45,22 +61,7 @@ yarn add --dev babel-core babel-loader babel-preset-react-app
 yarn add --dev webpack-cli
 ```
 
-# **React_ManagementSystem**
-
-> React and Node.js based Customers Management System
-
 <br>
-
-#### Front-end
-
-- React
-
-  > Style은 Material UI Library 적용
-
-#### Back-end
-
-- Server : Node.js (Express로 REST API 구축)
-- Database : MYSQL (AWS RDS)
 
 ##### Tool
 
@@ -72,17 +73,15 @@ yarn add --dev webpack-cli
 
 ---
 
-- VSCode Extension에서 `Reactjs code snippet`을 다운받으면, `rcc` 키워드를 통해 쉽게 컴포넌트 로직을 구현할 수 있음
-
-- 프로젝트 폴더의 루트 영역에서는 server 구현, client 폴더 안에서 React를 통한 view 구현
-
-  > server에서 지정한 port번호는 client의 `package.json`에서 proxy 값을 통해 지정시켜주면서 연동이 가능하다.
+- server에서 지정한 port번호는 client의 `package.json`에서 proxy 값을 통해 지정시켜주면서 연동이 가능하다.
 
 - React는 App.js 폴더가 main이고, 여러 컴포넌트를 만들어 렌더링을 담당하는 `render()`에서 사용하고 배치하는 구조
 
 - React의 라이프사이클에 대한 이해가 필요함 ( 라이프사이클마다 생성주기가 다르기 때문에 적합한 시기를 찾아야함 )
 
-  >
+<img src = "https://github.com/rlatkd/ManagementSystem/blob/main/assets/lifeCycle.jpg">
+
+>
 
 - 컴포넌트를 렌더링하기위해 선언할때 인자값으로 메소드나 매개변수 값을 넘겨줄 수 있음
 
