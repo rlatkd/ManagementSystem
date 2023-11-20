@@ -1,4 +1,11 @@
-## 시연
+# JavaScript를 이용한 고객관리시스템 CRUD 웹 페이지 구현
+
+## 0. 목차
+
+- [시연](#1-시연)
+-
+
+## 1. 시연
 
 <img src="https://github.com/rlatkd/ManagementSystem/blob/main/assets/preview.gif?raw=true">
 
