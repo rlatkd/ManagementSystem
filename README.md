@@ -160,7 +160,7 @@ yarn add --dev webpack-cli
   > ```
 
 - 페이지 한글 글씨체 변경
-  `@material-ui/core/styles`에서 `MuiThemeProvider, `createMuiTheme`를 가져와야함
+  `@material-ui/core/styles`에서 `MuiThemeProvider`, `createMuiTheme`를 가져와야함
 
   클라이언트의 index.js에서 사용. index.js는 리액트의 가상DOM으로 app.js 전체를 렌더링하는 곳
 
