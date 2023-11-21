@@ -5,6 +5,7 @@
 - [시연](#1-시연)
 - [스택](#2-Stack)
 - [설정](#3-Settings)
+- [후기](#4-후기)
 
 ## 1. 시연
 
@@ -26,7 +27,7 @@
 
 ## 3. Settings
 
-### Windows PowerShell settings
+### Windows PowerShell policies
 
 ```
 get-help Set-ExecutionPolicy
@@ -59,7 +60,7 @@ ReactDOM.render(<App />,document.getElementById('root'));
 ...
 ```
 
-### Yarn
+### Yarn initialize
 
 ```
 yarn init
@@ -69,27 +70,15 @@ yarn add --dev babel-core babel-loader babel-preset-react-app
 yarn add --dev webpack-cli
 ```
 
-<br>
+## 4. 후기
 
-##### Tool
-
-- VSCode
-
-**컴포넌트 구성** : Customer(id, image, name, birthday, gender, job)
-
-#### 프로젝트를 통해 배운점
-
----
-
-- server에서 지정한 port번호는 client의 `package.json`에서 proxy 값을 통해 지정시켜주면서 연동이 가능하다.
+- server에서 지정한 port번호는 client의 `package.json`에서 proxy 값을 통해 지정시켜주면서 연동이 가능
 
 - React는 App.js 폴더가 main이고, 여러 컴포넌트를 만들어 렌더링을 담당하는 `render()`에서 사용하고 배치하는 구조
 
-- React의 라이프사이클에 대한 이해가 필요함 ( 라이프사이클마다 생성주기가 다르기 때문에 적합한 시기를 찾아야함 )
+- React의 라이프사이클에 대한 이해가 필요 (라이프사이클마다 생성주기가 다르기 때문에 적합한 시기를 찾아야함)
 
 <img src = "https://github.com/rlatkd/ManagementSystem/blob/main/assets/lifeCycle.jpg">
-
->
 
 - 컴포넌트를 렌더링하기위해 선언할때 인자값으로 메소드나 매개변수 값을 넘겨줄 수 있음
 
