@@ -27,7 +27,7 @@
 
 ## 3. Settings
 
-### Windows PowerShell policies
+### Windows PowerShell Excution Policies
 
 ```
 get-help Set-ExecutionPolicy
@@ -60,7 +60,7 @@ ReactDOM.render(<App />,document.getElementById('root'));
 ...
 ```
 
-### Yarn initialize
+### Yarn installation
 
 ```
 yarn init
