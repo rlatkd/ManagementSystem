@@ -3,15 +3,15 @@
 ## 0. 목차
 
 - [시연](#1-시연)
-- [스택](#2-Stack)
-- [설정](#3-Settings)
+- [스택](#2-스택)
+- [설정](#3-설정)
 - [후기](#4-후기)
 
 ## 1. 시연
 
 <img src="https://github.com/rlatkd/ManagementSystem/blob/main/assets/preview.gif?raw=true">
 
-## 2. Stack
+## 2. 스택
 
 ### Frontend
 
@@ -25,7 +25,7 @@
 
 - MySQL ^5.7
 
-## 3. Settings
+## 3. 설정
 
 ### Windows PowerShell Excution Policies
 
