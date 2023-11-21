@@ -98,6 +98,8 @@ yarn add --dev webpack-cli
   밖에서 메소드를 선언해주면 됨
 
   ```javascript
+  ...
+  ...
   stateRefresh() => {
       this.setState({
         customers: "",
@@ -107,12 +109,16 @@ yarn add --dev webpack-cli
       this.callApi()
         .then(res => this.setState({ customers: res }))
         .catch(err => console.log(err));
-  }
+  };
+  ...
+  ...
   ```
 
   ###### 바인드 선언없이 바로 사용하려면?
 
   ```javascript
+  ...
+  ...
   stateRefresh = () => {
     this.setState({
       customers: "",
@@ -123,15 +129,19 @@ yarn add --dev webpack-cli
       .then((res) => this.setState({ customers: res }))
       .catch((err) => console.log(err));
   };
+  ...
+  ...
   ```
 
-- AWS RDS를 통해 MySQL 데이터베이스를 생성하고, Node.js 서버로 연동시키는 방법 학습
+- MySQL 데이터베이스를 생성하고, Node.js 서버로 연동시키는 방법
 
-  > database.json을 만들어 `host, user, password, port, database` 선언
+  > database.json을 만들어 `host`, `user`, `password`, `port`, `database` 선언
   >
   > server.js에서 아래와 같이 connect
   >
   > ```javascript
+  > ...
+  > ...
   > const data = fs.readFileSync("./database.json");
   > const conf = JSON.parse(data);
   > const mysql = require("mysql");
@@ -145,24 +155,14 @@ yarn add --dev webpack-cli
   > });
   >
   > connection.connect();
+  > ...
+  > ...
   > ```
 
-- git에 push할 때는 중요한 정보나 node_module 같이 용량이 크고 올릴 필요 없는 데이터들은 `.gitignore` 파일을 생성해서 제외시킬 수 있음
-
-  ```
-  node_modules
-
-  # database
-  /database.json
-
-  # upload
-  /upload
-  ```
-
-- 페이지 한글 글씨체 변경하기
+- 페이지 한글 글씨체 변경
   `@material-ui/core/styles`에서 `MuiThemeProvider, createMuiTheme`를 가져와야함
 
-  이는 클라이언트의 index.js에서 사용. index.js는 리액트의 가상돔으로 app.js 전체를 렌더링하는 곳
+  클라이언트의 index.js에서 사용. index.js는 리액트의 가상DOM으로 app.js 전체를 렌더링하는 곳
 
   ```javascript
   import React from "react";
@@ -187,4 +187,6 @@ yarn add --dev webpack-cli
   );
 
   serviceWorker.unregister();
+  ...
+  ...
   ```
