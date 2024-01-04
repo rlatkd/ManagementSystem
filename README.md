@@ -1,4 +1,4 @@
-# web application project using React v16.7.0 & Express v4.16.4
+# 개인 클론 코딩
 
 ## 0. 목차
 
