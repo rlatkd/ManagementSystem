@@ -1,4 +1,4 @@
-# 개인 클론 코딩
+# 개인 토이프로젝트
 
 ## 0. 목차
 
@@ -9,7 +9,7 @@
 
 ## 1. 시연
 
-<img src="https://github.com/rlatkd/ManagementSystem/blob/main/assets/preview.gif?raw=true">
+<img src="https://github.com/rlatkd/management-system/blob/main/assets/preview.gif?raw=true">
 
 ## 2. 스택
 
@@ -78,7 +78,7 @@ yarn add --dev webpack-cli
 
 - React의 라이프사이클에 대한 이해가 필요 (라이프사이클마다 생성주기가 다르기 때문에 적합한 시기를 찾아야함)
 
-<img src = "https://github.com/rlatkd/ManagementSystem/blob/main/assets/lifeCycle.jpg">
+<img src = "https://github.com/rlatkd/management-system/blob/main/assets/lifeCycle.jpg">
 
 - 컴포넌트를 렌더링하기위해 선언할때 인자값으로 메소드나 매개변수 값을 넘겨줄 수 있음
 
